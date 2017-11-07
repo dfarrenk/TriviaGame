@@ -1,0 +1,11 @@
+Start game button
+
+Present player with a question
+    If 30 seconds pass or player guess wrong: fail
+    If player guess correct: pass
+
+Present answer screen
+    Click to continue
+    
+Repeat until all questions played through
+Present score screen
