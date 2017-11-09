@@ -66,10 +66,18 @@
         question: 'What song was intended to be the theme for The Legend of Zelda?',
         answerOne: "Handel's Water Music",
         answerTwo: "Ravel's Bolero",
-        answerThree: '',
+        answerThree: "Morricone's Ecstasy of Gold",
         answerFour: 'None of the Above',
         correctAnswer: "Ravel's Bolero",
         image: 'assets/images/title.gif'
+    }, {
+        question: 'After Ocarina of Time, how many timelines does the series split into?',
+        answerOne: 'One',
+        answerTwo: 'Two',
+        answerThree: 'Three',
+        answerFour: 'Four',
+        correctAnswer: 'Three',
+        image: 'assets/images/ZeldaTimeline3.png'
     }];
 
 
@@ -105,7 +113,7 @@
         $('#game').append("<img src='" + questions[currentQuestion].image + "' class='center' id='answer-image'>");
         currentQuestion++;
         if (currentQuestion < questions.length) {
-            setTimeout(nextQuestion, 3000);
+            setTimeout(nextQuestion, 4000);
         }
         else {
             setTimeout(function() {
