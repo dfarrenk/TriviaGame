@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <title>Some Sort Of Trivia Game</title>
+    <title>Legend of Zelda Trivia Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,12 +12,20 @@
         }
 
         .jumbotron {
-            opacity: .80;
+            opacity: .90;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
         }
 
         #game {
             height: 400px;
+        }
 
+        #game img {
+            height: 300px;
         }
     </style>
 </head>
@@ -25,25 +33,28 @@
 <body>
     <br>
     <div class="container">
+
         <div class="row">
             <div class="col-md-offset-1 col-lg-10">
                 <div class="jumbotron">
+                    <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+                    <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+
                     <h1>Zelda Trivia Game:</h1>
                     <div id="game">
-                        <h2>Time Remaining: <span id='time-remaining'></span></h2>
-                        <h2 id='trivia-question'>Question goes here</h2>
-                        <div class="list-group">
-                            <button type="button" class="list-group-item" id='answer-one'>Cras justo odio</button>
-                            <button type="button" class="list-group-item" id='answer-two'>Dapibus ac facilisis in</button>
-                            <button type="button" class="list-group-item" id='answer-three'>Morbi leo risus</button>
-                            <button type="button" class="list-group-item" id='answer-four'>Porta ac consectetur ac</button>
-                        </div>
-                        <!-- <button id='start-button'>Start</button> -->
+                        <button id='start-button' class='center'>Start</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--
+                        <h2>Time Remaining: <span id='time-remaining'></span></h2>
+                        <h2>Yep/Nope</h2>
+                        <h2>The correct answer was: <span id='correct-answer'></span></h2>
+                        <img src='assets/images/rupee.gif' class='center' id='answer-image'>
+-->
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
